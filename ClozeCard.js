@@ -28,7 +28,7 @@ class ClozeCard{
         })
         
         this.partial = partial.join(' ');
-        
+        // return partial text
         return this.partial;
       }
       // Else cloze could not be found in fullText

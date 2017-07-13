@@ -35,7 +35,7 @@ createBasicCard = () => {
     })
 }
 
-// Function to create a new basic card
+// Function to create a new cloze card
 createClozeCard = () => {
   
   inquirer.prompt([
@@ -67,6 +67,8 @@ createClozeCard = () => {
   })
 }
 
+// Function to get user input with inquirer an call 
+//createBasicCard or call createClozeCard
 (createNewCard = () => {
   inquirer.prompt([
     {
@@ -80,7 +82,6 @@ createClozeCard = () => {
     
     switch(options.choice){
       case 'Basic Card':
-         console.log('Basic');
         createBasicCard();
       break;
       case 'Cloze Card':
